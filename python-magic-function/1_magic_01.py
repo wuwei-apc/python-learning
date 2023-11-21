@@ -11,11 +11,14 @@
 class Student:
     def __init__(self, student_list):
         self.student_list = student_list
+
     # 魔法方法,python 自带方法
-    def __getitem__(self,item):
+    def __getitem__(self, item):
         # 序列特征
         return self.student_list[item]
-student = Student(['李四','Tom','李华'])
+
+
+student = Student(['李四', 'Tom', '李华'])
 
 # 迭代
 for stud in student.student_list:
