@@ -6,6 +6,7 @@
 @Time：2023/11/21 13:59
 """
 
+
 # class A:
 #     name = 'class_A'
 #     def __init__(self):
@@ -23,13 +24,18 @@
 class D:
     name = "class_D"
 
+
 class B(D):
     name = "class_B"
+
+
 class C(D):
     name = "class_C"
 
-class A(B,C):
+
+class A(B, C):
     pass
+
 
 a = A()
 print(a.name)
