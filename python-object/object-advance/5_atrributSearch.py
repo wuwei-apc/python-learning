@@ -42,3 +42,31 @@ print(a.name)
 print(type(a))
 print(A.__bases__)
 print(A.__mro__)
+print("------------------------")
+
+
+# 树状继承
+class E:
+    name = 'E-Tom'
+
+
+class F:
+    name = 'F-Tom'
+
+
+class G(E):
+    name = 'G-Tom'
+
+
+class H(F):
+    name = 'H-Tom'
+
+
+class A1(H, G):
+    pass
+
+
+a1 = A1()
+print(a1.name)
+print(A1.__bases__)
+print(A1.__mro__)
